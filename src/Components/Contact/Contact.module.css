@@ -1,0 +1,47 @@
+.formBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+textarea, input:not([type = "submit"]){
+    height: 50px;
+    padding-left: 16px;
+
+}
+
+textarea{
+    padding-top: 16px;
+    resize: none;
+    height: 250px;
+}
+input, textarea{
+    border-radius: 20px;
+    border: #888 1px solid;
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: var(--background-color);
+    color: var(--form-text-color);
+}
+::placeholder{
+    color: var(--form-text-color)
+}
+
+@media(width >= 800px){
+    textarea, input{
+        font-size: 20px;
+    }
+    form{
+        gap: 40px;
+    }
+}
